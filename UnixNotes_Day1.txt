@@ -1,0 +1,102 @@
+---------------------------------------------------------------------
+Astronomy 300 - Inital Setup
+---------------------------------------------------------------------
+
+Open up a terminal on one the astrolab machines (right click on the
+background and select Open Terminal). First thing to do is to run the
+setup file. The "$" is the Unix prompt, you do not type this character.
+
+Get the setup file:
+
+$ cd
+$ cp ~pikaia/setup .   make sure to type the "."
+$ tcsh setup
+
+***** Mac/Linux latop users start here *****
+
+$ cd
+$ git clone https://github.com/UWashington-Astro300/Astro300-W19.git
+
+---------------------------------------------------------------------
+Astronomy 300 - Week 0 Notes - Command Line Data Exploration
+---------------------------------------------------------------------
+
+$ cd Astro300-W19      change directory
+
+$ pwd                  Show the current directory path.
+
+$ cd Data              change to the Data directory
+
+$ pwd
+
+$ ls
+
+. a single "." - this refers to the directory you are in
+
+$ ls .
+
+.. two ".." - this refers to the directory above your current directory
+
+$ ls ..
+
+$ ls Week0           list the files in the subdirectory named "Week0"
+
+$ ls -R              list all of the files in this dirctory AND below
+
+---------------------------------------------------------------------
+
+.. Astro300-W19
+.  Data
+│   ├── BrightStars.csv
+│   ├── Constellations.csv
+│   ├── Jabber.txt
+│   └── Week0
+│       ├── A
+│       │   └── a_file
+│       ├── B
+│       │   └── another_file
+│       └── C
+│           └── yet_another_file.py
+
+---------------------------------------------------------------------
+
+$ cd Week0             move down to the subdirectory named "Week0"
+$ pwd
+
+$ cp A/a_file .        cp = "copy", . at end means cp file to current dir
+$ ls
+
+$ mv a_file FILE       mv = "move", renames the file
+$ ls
+
+$ rm FILE              rm = "remove"  Delete file (NO RECOVERY!)
+$ ls
+
+---------------------------------------------------------------------
+
+$ cp ../Jabber.txt .   cp file "Jabber.txt" from dir above
+$ ls
+
+$ cat Jabber.txt       "stream" file to terminal
+
+---------------------------------------------------------------------
+
+[TAB] Completion
+$ cat J[TAB]      Hit [TAB] again to show all options
+
+[UP] [DOWN] arrows - command history
+
+$ history          Shows history of commands
+
+$ !num             will rerun num command
+
+---------------------------------------------------------------------
+
+$ cd      change directory
+$ ls      list files in directory
+$ pwd     show current directory
+$ cp      copy
+$ mv      move (rename)
+$ rm      remove (delete)
+
+---------------------------------------------------------------------
