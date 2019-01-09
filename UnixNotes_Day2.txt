@@ -1,0 +1,123 @@
+---------------------------------------------------------------------
+Astronomy 300 - Day 2 Notes - Streams, sorting, and AWK
+---------------------------------------------------------------------
+
+$ cd
+$ cd Astro300-W19
+$ git pull
+
+$ cd Data
+
+---------------------------------------------------------------------
+
+Line Numbers
+
+$ nl Jabber.txt          Shows line number
+$ nl -ba Jabber.txt      including blank lines (more useful)
+
+---------------------------------------------------------------------
+
+$ cat BrightStars.csv             streams file to terminal
+
+Chopping Streams (head and tail)
+
+$ head BrightStars.csv            first 10 lines
+$ tail BrightStars.csv            last 10 lines
+
+$ head -20 BrightStars.csv        first 20 lines
+$ tail -20 BrightStars.csv        last 20 lines
+
+---------------------------------------------------------------------
+
+Diverting Streams (> and >>)
+
+$ head -23 BrightStars.csv > 10Bright.csv     (>) crates file, overwriting old
+$ ls
+
+$ wc 10Bright.csv                             number of lines, words, and bytes
+
+$ tail -11 BrightStars.csv >> 10Bright.csv    (>>) appends data to file
+
+$ wc 10Bright.csv
+
+---------------------------------------------------------------------
+
+Connecting Streams - pipes (|)
+
+$ cat 10Bright.csv | grep 'e'        <- grep matches thing in ' '
+$ cat 10Bright.csv | grep 'e' | wc
+
+$ cat 10Bright.csv | grep -v '^\#' | grep 'e'                 ignore lines beginning with #
+
+---------------------------------------------------------------------
+
+Sorting Streams - sort
+
+$ cat 10Bright.csv | grep -v '^\#' | sort -t ',' -k 2         Alphabetical sort (default)
+$ cat 10Bright.csv | grep -v '^\#' | sort -t ',' -k 1         Not good for numbers!
+$ cat 10Bright.csv | grep -v '^\#' | sort -t ',' -g -k 1      Numerical sort (very different)
+$ cat 10Bright.csv | grep -v '^\#' | sort -t ',' -g -r -k 5   Reverse sort
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+AWK - Aho, Weinberger, & Kernighan
+
+$ cat 10Bright.csv | grep -v '^\#' | awk -F, '{print $2}'    print 2nd column
+$ cat 10Bright.csv | grep -v '^\#' | awk -F, '{print $0}'    Same as $ cat 10Bright.csv
+
+$ cat 10Bright.csv | grep -v '^\#' | awk -F, '{print $5,$1}'
+$ cat 10Bright.csv | grep -v '^\#' | awk -F, '{OFS=","}{print $5,$1}'
+
+-------------------------------------------------------------
+
+==  equal to         <   less than                   &&  and
+!=  not equal to     >=  greater than or equal to    ||  or
+>   greater than     <=  less than or equal to
+
+-------------------------------------------------------------
+
+Print all lines where the value of column 4 > 0.0:
+$ cat 10Bright.csv | grep -v '^\#' | awk -F, '{if ($4 > 0.0) print $0}'
+
+
+Print all lines where the value of column 5 is between 0.0 and 1.0: 
+$ cat 10Bright.csv | grep -v '^\#' | awk -F, '{if ($5>0.0 && $5<1.0) print $0}'
+
+
+Print all lines where the value of column 2 contains "A" (anywhere in the column).
+$ cat 10Bright.csv | grep -v '^\#' | awk -F, '{if ($2~/A/) print $0}'
+
+
+You can append '| wc' to the end of each of the above to get a count
+
+-------------------------------------------------------------
+
+Assignment #1 - Due Mon at 1pm
+
+-------------------------------------------------------------
+
+The file in the Data folder: **Constellations.csv** contains a list of
+the 88 constellations in the sky.
+
+The 5 columns in the files are:
+* Name
+* Symbol
+* RA of center
+* Dec of center
+* Flag
+
+The Flag column letters are:
+* Z = Zodiacal constellation
+* A = Ancient Name
+* M = Modern Name (after 1603)
+
+## Questions to Answer - On Canvas.
+
+1. List the names of the constellations that are circumpolar as seen
+from Seattle (Lat = +47.6).
+
+2. What constellation is closest to the Zenith, as seen from Seattle, on
+midnight on the first day of Winter?
