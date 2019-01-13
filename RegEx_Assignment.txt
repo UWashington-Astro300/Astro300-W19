@@ -1,0 +1,103 @@
+------------------------------------------------------------------------
+RegEx Assignment
+------------------------------------------------------------------------
+
+Part I - Regex Golf is an exercise of trying to find the shortest
+regular expression that matches all strings in one given set, but does
+not match any of the strings in a different given set. Like golf, a
+lower score is better.
+
+For example, this is the content of the file "golf_00":
+
+00 one
+01 two
+02 three
+
+00 four
+01 five
+02 six
+
+The goal is to find a regex that will match the top set (one, two,
+three), but not match ANY of the bottom set (four, five, six).
+
+This will work:  grep -E 'one|two|three' golf_00
+
+But that regex took 13 characters - Not a good score
+
+This is better:  grep -E 't|n' golf_00
+
+That regex took 3 characters - A much better score.
+
+I have given you 9 holes to play (golf_01 .. golf_09).
+
+The files in the directory Astro300-A18/Data/GOLF
+
+ - You can ONLY use the -E flag. No -v or -o flags allowed!
+ - They get harder as you go on.
+ - Bonus points for the lowest score.
+ - The approximate pars are listed below.
+ - Some holes can be played under par. Some not.
+ - If you are stuck, I have given you some helpful(?) clues in golf_HINTS
+
+Hole | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 |
+---------------------------------------------------
+Par  | 3  | 5  | 3  | 6  | 5  | 9  | 8  | 12 | 7  |   Total = 58
+
+------------------------------------------------------------------------
+
+Part II - Find and download a big chunk of English text (8000 lines at
+least) from Project Gutenberg:
+
+http://www.gutenberg.org/catalog/
+
+Download the Plain text (us-ascii or Plain Text UTF-8) version.
+
+Determine the letter frequency distribution for that chunk of text
+(convert everything to lowercase).
+
+Determine the 5 most common WORDS in the text with length >= 7 letters
+(ignore case).
+
+Determine the longest word in the text. If there is more than one list
+them all
+
+------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------
+RAVENCLAW Sections - Remember doing (or nor doing) these sections will
+                     NOT effect your grade!
+------------------------------------------------------------------------
+
+Part III - Codebreaking
+
+Take a look at: https://en.wikipedia.org/wiki/Frequency_analysis
+
+You are given 3 coded messages (code1.txt ... code3.txt) in the directory:
+
+Astro300-W19/Data/GOLF/Ravenclaw
+
+The messages are coded with a simple character substitution (i.e. x = a,
+2 = e, for ALL occurrences of "x" and "2" in the message).  Each file
+has a different substitution.  All of the inter-word spaces and
+punctuation have been removed and case is ignored.
+
+Determine which of the 3 coded messages are real messages and which
+ones are decoy messages of garbage (random distributions).
+
+------------------------------------------------------------------------
+
+Part IV - The Hermione Granger Level
+
+Decode the real message(es) and tell me the source of the quotes.  All
+real messages are quotes from the popular geek cannon.  Remember that
+all of the inter-word spaces and punctuation have been removed and
+case is ignored, so words may break across lines.
+
+Hint: If you think z=T, j=H, and x=E in code1.txt use:
+
+% cat code1.txt | tr zjx THE
+
+You can expand your substitution list as you go along.
+

@@ -1,0 +1,75 @@
+--------------------
+Part I - Regex Golf
+--------------------
+
+golf_01
+
+Regex command: 
+No. of characters: 
+
+golf_02
+
+Regex command: 
+No. of characters: 
+
+golf_03
+
+Regex command: 
+No. of characters: 
+
+golf_04
+
+Regex command: 
+No. of characters: 
+
+golf_05
+
+Regex command: 
+No. of characters: 
+
+golf_06
+
+Regex command: 
+No. of characters: 
+
+golf_07
+
+Regex command: 
+No. of characters: 
+
+golf_08
+
+Regex command: 
+No. of characters: 
+
+golf_09
+
+Regex command: 
+No. of characters: 
+
+Total Score:
+
+--------------------------------
+Part II - Project Gutenberg Text
+--------------------------------
+
+Novel Title:
+
+Letter Frequency:
+
+
+
+5 most common WORDS with length >= 7 letters:
+
+1. 
+2. 
+3. 
+4. 
+5. 
+
+Longest word: 
+
+-----
+
+Ravenclaw Answers:
+

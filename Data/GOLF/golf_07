@@ -1,0 +1,11 @@
+00 john ( paul ( george ringo ) )
+01 john paul ( ( george ringo ) )
+02 john paul george ( ringo ) ( )
+03 ( john paul (george) ringo )
+04 ( john paul george ) ( ringo )
+
+00 john ( paul ) ( george ) ringo
+01 john ( paul )(( george ringo ))
+02 john paul ( ( ( george ) ringo
+03 (( john )) paul george (ringo)
+04 ( john paul george ringo )
