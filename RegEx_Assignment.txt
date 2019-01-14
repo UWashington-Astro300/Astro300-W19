@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------
-RegEx Assignment
+RegEx Assignment - DUE Tue Jan 22 1 pm
 ------------------------------------------------------------------------
 
 Part I - Regex Golf is an exercise of trying to find the shortest
@@ -30,7 +30,7 @@ That regex took 3 characters - A much better score.
 
 I have given you 9 holes to play (golf_01 .. golf_09).
 
-The files in the directory Astro300-A18/Data/GOLF
+The files in the directory Astro300-W18/Data/GOLF
 
  - You can ONLY use the -E flag. No -v or -o flags allowed!
  - They get harder as you go on.
@@ -76,7 +76,7 @@ Take a look at: https://en.wikipedia.org/wiki/Frequency_analysis
 
 You are given 3 coded messages (code1.txt ... code3.txt) in the directory:
 
-Astro300-W19/Data/GOLF/Ravenclaw
+Astro300-W19/Data/GOLF/Ravenclaw/
 
 The messages are coded with a simple character substitution (i.e. x = a,
 2 = e, for ALL occurrences of "x" and "2" in the message).  Each file
