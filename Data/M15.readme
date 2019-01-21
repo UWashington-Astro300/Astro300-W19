@@ -1,0 +1,88 @@
+J/AJ/107/1745                 HST UVI photometry of M15. II.    (Yanny+, 1994)
+================================================================================
+Globular cluster photometry with the Hubble Space Telescope. II.
+U, V, and I measurements of M15
+     Yanny B., Guhathakurta P., Bahcall J.N., Schneider D.P.
+    <Astron. J. 107, 1745 (1994)>
+    =1994AJ....107.1745Y
+================================================================================
+ADC_Keywords: Clusters, globular ; Photometry, UBV
+
+Abstract:
+    The projected  density distribution of resolved  stars near the center
+    of M15  is shown to be consistent with  either a power-law cusp
+    N(r) ~ r^{alpha}^,  with {alpha} ~  -0.85+/-0.2, or with  a King model
+    with a  core of  radius <~  2" (best  fit r(core)=1.3").  The inferred
+    slope is in  agreement  with  the  theoretical  value,  {alpha}=-0.75,
+    calculated by Bahcall and Wolf  for  the  distribution  of  equal-mass
+    stars surrounding a massive black hole and is also consistent with the
+    radial profile  expected from  core collapse  without a  central black
+    hole.  The object AC 214 is a  candidate for the central density cusp.
+    Analysis of  Monte Carlo  simulations of  the diffuse  light indicates
+    that, using  current  analysis  techniques  and  available  data,  the
+    residual light is  not  a  reliable  indicator  of  the  true  density
+    distribution.  This  is  contrary   to   earlier   work.   Photometric
+    measurements in V and I of more than 5x10^3^ stars (and in U, V, and I
+    of >~1500 stars) are used to construct color-magnitude diagrams in the
+    central 1'  of M15. Fourteen blue  straggler candidates are identified
+    in the inner 20". The  central  color  gradient  noticed  by  previous
+    researchers is caused by a central depletion of bright red giant stars
+    rather than an  excess of  blue stragglers  or blue  horizontal branch
+    stars.
+
+Objects:
+    ---------------------------------------------------
+       RA   (2000)   DE    Designation(s)
+    ---------------------------------------------------
+     21 29 58.2 +12 10 02  M 15 = NGC 7078 = C 2127+119
+    ---------------------------------------------------
+
+Addresses:
+   Yanny B.                       yanny@guinness.ias.edu
+     Institute for Advanced Study, Princeton, New Jersey 08540
+   Guhathakurta P.                raja@astro.princeton.edu
+     Princeton University Observatory, Peyton Hall, Princeton,
+     New Jersey 08544-1001
+   Bahcall J.N.                   jnb@sns.ias.edu
+   Schneider D.P.                 dps@sns.ias.edu
+      Institute for Advanced Study, Princeton, New Jersey 08540
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName  Lrecl    Records    Explanations
+--------------------------------------------------------------------------------
+ReadMe        80          .    This file
+table3.dat    37       1186    Stellar photometry and astrometry for M15
+                               (V < 18.1)
+--------------------------------------------------------------------------------
+
+See also:
+    J/AJ/106/154  : HST Observations in inner region of M15 (Ferraro+ 1993)
+    J/AJ/107/2067 : Fabry-Perot measurements of M15 (Gebhardt+, 1994)
+    J/AJ/110/704  : RR Lyrae in M15 (Silbermann+ 1995)
+    J/ApJ/347/251 : Dynamics of Globular Cluster M15 (Peterson+ 1989)
+
+Byte-per-byte Description of file: table3.dat
+--------------------------------------------------------------------------------
+   Bytes  Format  Units     Label  Explanations
+--------------------------------------------------------------------------------
+   1-  4  I4      ---       ID     Identification number (YGBS number)
+   6- 11  F6.2    arcsec    oRA    Right ascension offset from AC 211=ID 653 (1)
+  13- 18  F6.2    arcsec    oDE    Declination offset from AC 211=ID 653 (1)
+  20- 24  F5.2    mag       Vmag   Visual magnitude (filter F555W)
+  26- 30  F5.2    mag       V-I    V-I color (F785LP - F555W)
+  32- 36  F5.2    mag       U-V    ? U-V color (F336W - F555W)
+      37  A1      ---     n_U-V    [ab] Note for U-V (2)
+--------------------------------------------------------------------------------
+Note (1): Coordinates are arcsec offsets relative to AC 211 = ID 653.
+          ID 653 is at 21:29:58.26+12:10:02.90
+Note (2): a - the star is located outside the area covered by the U image.
+          b - the star is not detected in U, though the area was covered.
+--------------------------------------------------------------------------------
+
+References:
+    Auriere M., Cordoni J.-P., =1981A&AS...46..347A
+
+Origin: AAS CD-ROM series, Volume 2, 1994
+================================================================================
+(End)           Lee Brotzman [ADS] 17-May-1994, Patricia Bauer [CDS] 24-Oct-1994
